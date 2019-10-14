@@ -40,6 +40,14 @@ def exif_size(img):
     return s
 
 
+def is_img_file(file):
+    return os.path.splitext(file)[-1].lower() in img_formats
+
+
+def is_video_file(file):
+    return os.path.splitext(file)[-1].lower() in vid_formats
+
+
 class LoadImages:  # for inference
     def __init__(self, path, img_size=416, half=False):
         path = str(Path(path))  # os-agnostic
@@ -49,8 +57,8 @@ class LoadImages:  # for inference
         elif os.path.isfile(path):
             files = [path]
 
-        images = [x for x in files if os.path.splitext(x)[-1].lower() in img_formats]
-        videos = [x for x in files if os.path.splitext(x)[-1].lower() in vid_formats]
+        images = [x for x in files if is_img_file(x)]
+        videos = [x for x in files if is_video_file(x)]
         nI, nV = len(images), len(videos)
 
         self.img_size = img_size
