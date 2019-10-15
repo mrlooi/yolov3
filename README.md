@@ -1,20 +1,7 @@
-<table style="width:100%">
-  <tr>
-    <td>
-      <img src="https://user-images.githubusercontent.com/26833433/61591130-f7beea00-abc2-11e9-9dc0-d6abcf41d713.jpg">
-    </td>
-    <td align="center">
-    <a href="https://www.ultralytics.com" target="_blank">
-    <img src="https://storage.googleapis.com/ultralytics/logo/logoname1000.png" width="160"></a>
-      <img src="https://user-images.githubusercontent.com/26833433/61591093-2b4d4480-abc2-11e9-8b46-d88eb1dabba1.jpg">
-          <a href="https://itunes.apple.com/app/id1452689527" target="_blank">
-    <img src="https://user-images.githubusercontent.com/26833433/50044365-9b22ac00-0082-11e9-862f-e77aee7aa7b0.png" width="180"></a>
-    </td>
-    <td>
-      <img src="https://user-images.githubusercontent.com/26833433/61591100-55066b80-abc2-11e9-9647-52c0e045b288.jpg">
-    </td>
-  </tr>
-</table>
+# FOR CYRIL
+1. Download model weights `yolov3.pt` from https://drive.google.com/drive/folders/1uxgUBemJVw9wZsdpboYbzUN4bcRhsuAI. Put the weights into `weights` folder
+2. Run `python infer.py` # Runs on GPU (uses about 2Gb GPU RAM)
+
 
 # Introduction
 
